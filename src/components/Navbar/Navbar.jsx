@@ -49,7 +49,7 @@ const Dropdownlist=[
 
 const Navbar = ({handleOrderpopup}) => {
   return (
-    <div className='shadow-md bg-white dark:text-white duration-200 relative z-40'>
+    <div className='shadow-md bg-white dark:text-black duration-200 relative z-40'>
         <div className='bg-primary/40 py-2'>
           <div className='container flex justify-between items-center '>
             <div>
@@ -80,8 +80,8 @@ const Navbar = ({handleOrderpopup}) => {
                         <a href={data.linke} className='inline-block px-4 hover:text-primary duration-200'>{data.name}</a>
                     </li>
                 ))}
-                <li className='group-relative cursor-pointer '>
-                    <a href="#" className='flex items-start gap-[2px] py-2 '>
+                <li className=' relative group cursor-pointer '>
+                    <a href="#" className='flex items-center gap-1 py-2 '>
                         Tranding Products
                         <span>
                             <FaCaretDown className='transition-all duration-200 group-hover:rotate-180'/>
@@ -89,11 +89,11 @@ const Navbar = ({handleOrderpopup}) => {
                     </a>
                     <div className='absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md'>
                         <ul>
-                            {Dropdownlist.map((data)=>{
+                            {Dropdownlist.map((data)=>(
                                 <li key={data.id}>
                                     <a href={data.linke} className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>{data.name}</a>
                                 </li>
-                            })}
+                            ))}
                         </ul>
                     </div>
                 </li>
