@@ -49,8 +49,8 @@ const Dropdownlist=[
 
 const Navbar = ({handleOrderpopup}) => {
   return (
-    <div className='shadow-md bg-white dark:text-black duration-200 relative z-40'>
-        <div className='bg-primary/40 py-2'>
+    <div className='shadow-md bg-white dark:bg-gray-900  dark:text-white duration-200 relative z-40'>
+        <div className='bg-primary/40 dark:bg-gray-800 py-2'>
           <div className='container flex justify-between items-center '>
             <div>
                 <a href='#' className='font-bold text-xl items-center flex gap-1'>
