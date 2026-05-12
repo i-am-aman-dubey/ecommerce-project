@@ -9,9 +9,14 @@ import TopProducts from "./components/TopProducts/TopProducts";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
+import ProductPopup from "./components/ProductsPopup/ProductPopup";
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false);
+  const [search, setSearch] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  console.log(setSelectedProduct)
 
   const handleOrderpopup = () => {
     setOrderPopup(!orderPopup)
@@ -30,14 +35,15 @@ function App() {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-        <Navbar handleOrderpopup={handleOrderpopup}/>
+        <Navbar handleOrderpopup={handleOrderpopup} search={search} setSearch={setSearch}/>
         <Hero handleOrderpopup={handleOrderpopup}/>
-        <Products/>
+        <Products search={search} setSelectedProduct={setSelectedProduct}/>
         <TopProducts handleOrderPopup={handleOrderpopup}/>
         <Banner/>
         <Subscribe/>
         <Testimonials/>
         <Footer/>
+        <ProductPopup selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}/>
       </div>
     </>
   )
