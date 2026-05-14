@@ -35,11 +35,11 @@ const TopProducts = ({handleOrderPopup}) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi blanditiis fuga natus maiores, ut ipsam, debitis beatae, iste eligendi vitae.
         </p>
         <div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-28 md:gap-y-5 gap-x-5 place-items-center'>
                 {ProductsData.map((data)=>(
-                    <div data-aos='zoom-in' className='rounded-2xl text-center bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]'>
+                    <div data-aos='zoom-in' className='pt-15 rounded-2xl text-center bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]'>
                         <div>
-                            <img src={data.img} alt="" className='max-w-[140px] block mx-auto tranform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md' />
+                            <img src={data.img} alt="" className='max-w-[140px] block mx-auto transform -sm:-translate-y-20 -translate-y-10 group-hover:scale-105 duration-300 drop-shadow-md' />
                         </div>
                      <div className='w-full flex items-center justify-center gap-1'>
                         <FaStar className='text-yellow-500'/>

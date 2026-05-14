@@ -120,7 +120,7 @@ const Products = ({search, setSelectedProduct}) => {
             <p data-aos='fade-up' className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex laboriosam fugit?</p>
         </div>
         <div>
-            <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5'>
+            <div className=' grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5'>
                 {filterdProdects.map((data)=>(
                     <div key={data.id} data-aos='fade-up' onClick={()=> setSelectedProduct(data)} data-aos-delay="200"     className='space-y-3 cursor-pointer'>
                         <img src={data.thumbnail} alt="Cover image" className='h-[220px] w-[150px] object-cover rounded-md' />
