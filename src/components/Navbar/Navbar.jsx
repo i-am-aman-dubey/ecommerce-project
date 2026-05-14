@@ -59,12 +59,12 @@ const Navbar = ({handleOrderpopup ,search, setSearch}) => {
                 </a>
             </div>
             <div className='flex justify-between items-center gap-4 '>
-                <div className='relative group hidden sm:block'>
-                    <input type='text' placeholder='Search'value={search} onChange={(e)=> setSearch(e.target.value)} className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-lg border border-gray-300 py-1 px-2 text-sm focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-slate-800'/>
-                    <IoMdSearch className='text-slate-800 dark:text-white group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3'/>
+                <div className='relative group block w-[120px] sm:w-auto ml-3'>
+                    <input type='text' placeholder={window.innerWidth<640? '':'Search'}value={search} onChange={(e)=> setSearch(e.target.value)} className='w-[90px] sm:w-[200px] md:w-[300px] pr-8 sm:group-hover:w-[300px] transition-all duration-300 rounded-lg border border-gray-300 py-1 px-2 text-sm focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-slate-800'/>
+                    <IoMdSearch className='text-slate-800 dark:text-white group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-2'/>
                 </div>
                 <button onClick={()=>{handleOrderpopup()}} className='bg-gradient-to-t from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
-                    <span className='group-hover:block hidden transition-all duration-200'>Order</span>
+                    <span className='opacity-0 group-hover:opacity-100 w-0 group-hover:w-auto overflow-hidden hidden sm:blocktransition-all duration-200'>Order</span>
                     <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
                 </button>
                 <div className=''>

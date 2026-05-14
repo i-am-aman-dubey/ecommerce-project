@@ -3,6 +3,7 @@ import { FaStar } from 'react-icons/fa6';
 
 const ProductPopup = ({selectedProduct,setSelectedProduct}) => {
     if(!selectedProduct) return null;
+    
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" >
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-6 rounded-2xl w-[90%] max-w-4xl relative" data-aos= "zoom-in" >
@@ -25,6 +26,7 @@ const ProductPopup = ({selectedProduct,setSelectedProduct}) => {
                 onClick={()=>setSelectedProduct(null)}
                 >x</button>
             </div>
+            
             </div>
     </div>
     </div>
