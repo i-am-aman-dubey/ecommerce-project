@@ -6,7 +6,7 @@ const ProductPopup = ({selectedProduct,setSelectedProduct}) => {
     
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" >
-    <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-6 rounded-2xl w-[90%] max-w-4xl relative" data-aos= "zoom-in" >
+    <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-6 rounded-2xl w-[90%] max-w-4xl relative" data-aos='fade-left'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
                 <img src={selectedProduct.thumbnail} alt={selectedProduct.title} className='w-full max-h-[400px] object-contain rounded-xl' />
             <div className='space-y-4'>
