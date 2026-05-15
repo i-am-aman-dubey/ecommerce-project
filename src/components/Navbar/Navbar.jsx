@@ -14,23 +14,23 @@ const menu =[
     },
     {
         id:2,
-        name:'Top Rated',
-        linke:'/#services'
+        name:'Top Products',
+        linke:'#topProducts'
     },
      {
         id:3,
-        name:'Kids Wear',
-        linke:'/#'
+        name:'Products',
+        linke:'#products'
     },
      {
-        id:3,
-        name:'Mens Wear',
-        linke:'/#'
+        id:4,
+        name:'Banner',
+        linke:'#banner'
     },
      {
-        id:3,
-        name:'Electronics',
-        linke:'/#'
+        id:5,
+        name:'Testimonials',
+        linke:'#testimonials'
     },
 ]
 
@@ -38,12 +38,12 @@ const Dropdownlist=[
     {
         id:1,
         name:'Tranding Products',
-        linke:'/#'
+        linke:'#products'
     },
       {
         id:2,
         name:'Best Selling',
-        linke:'/#'
+        linke:'#topProducts'
     },
 ]
 
@@ -73,7 +73,7 @@ const Navbar = ({handleOrderpopup ,search, setSearch}) => {
             </div>
           </div>
         </div>
-        <div data-aos='zoom-in' className='flex justify-center'>
+        <div className='flex justify-center'>
             <ul className='sm:flex hidden items-center gap-4'>
                 {menu.map((data)=>(
                     <li key={data.id}>

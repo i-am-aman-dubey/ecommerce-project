@@ -6,62 +6,6 @@ import Imge4 from '../../assets/women/women4.jpg';
 import {FaStar} from 'react-icons/fa6';
 import { useState, useEffect } from 'react';
 
-// const ProductsData = [
-//     {
-//         id:1,
-//         img:Imge1,
-//         title:'Women Ethnic',
-//         rating:5.0,
-//         color:'white',
-//         aosDelay:'0'
-//     },
-//     {
-//         id:2,
-//         img:Imge2,
-//         title:'Women Western',
-//         rating:4.0,
-//         color:'Red',
-//         aosDelay:'200'
-//     },
-//     {
-//         id:3,
-//         img:Imge3,
-//         title:'Goggles',
-//         rating:4.5,
-//         color:'Brown',
-//         aosDelay:'400'
-//     },
-//      {
-//         id:4,
-//         img:Imge4,
-//         title:'Women Ethnic',
-//         rating:4.7,
-//         color:'Yello',
-//         aosDelay:'600'
-//     },
-//     {
-//         id:5,
-//         img:Imge1,
-//         title:'Women Ethnic',
-//         rating:4.7,
-//         color:'black',
-//         aosDelay:'800'
-//     },
-
-// ]
-
-// const Products = () =>{
-//     const [products, setProducts] = useState([]);
-
-//     useEffect(()=>{
-//         fetch("https://dummyjson.com/products")
-//             .then((res) => res.json())
-//             .then((data) =>{
-//                 console.log(data);
-                
-//             })
-//     },[])
-// }
 
 const Products = ({search, setSelectedProduct}) => {
     const [products, setProducts] = useState([]);
@@ -112,7 +56,7 @@ const Products = ({search, setSelectedProduct}) => {
     const filterdProdects= products.filter((item)=> item.title.toLowerCase().includes(search.toLowerCase()))
 
   return (
-    <div className='mt-14 mb-12'>
+    <div id='products' className='mt-14 mb-12'>
       <div className='container'>
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
             <p data-aos='fade-up' className='text-sm text-primary'>Top Selling Products for you</p>

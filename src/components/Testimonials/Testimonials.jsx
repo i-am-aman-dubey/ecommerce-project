@@ -39,7 +39,7 @@ const TestimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className='py-10 mb-10 '>
+    <div id='testimonials' className='py-10 mb-10 '>
         <div className='container '>
             <div className='text-center mb-10 max-w-[600px] mx-auto'>
                 <p data-aos="fade-up" className='text-primary text-sm '>
